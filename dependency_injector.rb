@@ -20,7 +20,8 @@ class DependencyInjector
     end
 
     def article_database_manager
-      database_config = YAML.load_file('database_config.yml')
+      # database_config = YAML.load_file('database_config.yml')
+      database_config = 'dummy-database-config'
       ArticleDatabaseManager.new(database_config: database_config)
     end
   end
